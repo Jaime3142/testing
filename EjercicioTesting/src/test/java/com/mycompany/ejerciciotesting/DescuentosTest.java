@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class DescuentosTest {
    @Test
     public void DescuentoVeterano(){
-        Cliente c = new Cliente("jaime",8);
+        Cliente c = new Cliente("jaime",9);
         assertEquals(10, Descuentos.calcularDescuento(c), "No es veterano");
         
     }
@@ -26,7 +26,7 @@ public class DescuentosTest {
     @Test
     public void DescuentoNuevo(){
         Cliente c = new Cliente("jaime",4);
-        assertEquals(0, Descuentos.calcularDescuento(c), "No es veterano");
+        assertEquals(0, Descuentos.calcularDescuento(c), "No es nuevo.");
         
     }
     
